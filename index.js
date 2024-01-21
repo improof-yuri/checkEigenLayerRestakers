@@ -7,7 +7,8 @@ import { balanceRange } from './config.js';
 const excludedWallets = [
     '0x54945180db7943c0ed0fee7edab2bd24620256bc',
     '0x1bee69b7dfffa4e2d53c2a2df135c388ad25dcd2',
-    '0x93c4b944d05dfe6df7645a86cd2206016c51564d'
+    '0x93c4b944d05dfe6df7645a86cd2206016c51564d',
+    '0x0fe4f44bee93503346a3ac9ee5a26b130a5796d6'
 ];
 
 function processFile(inputFilePath, outputFilePath) {
@@ -70,7 +71,8 @@ function processFile(inputFilePath, outputFilePath) {
 const filePaths = [
     { input: './raw_data/raw-cbETH.csv', output: './result/cbETH.csv' },
     { input: './raw_data/raw-rETH.csv', output: './result/rETH.csv' },
-    { input: './raw_data/raw-stETH.csv', output: './result/stETH.csv' }
+    { input: './raw_data/raw-stETH.csv', output: './result/stETH.csv' },
+    { input: './raw_data/raw-swETH.csv', output: './result/swETH.csv' }
 ];
 
 filePaths.forEach(({ input, output }) => processFile(input, output));
